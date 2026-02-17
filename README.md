@@ -1,50 +1,6 @@
 # Zomato_End-to-End_Data_Analysis
 End-to-end data analysis project using food delivery data processed in PostgreSQL. Performed data cleaning and business analysis using SQL with aggregations and ranking logic. Integrated results into Microsoft Excel via ODBC to build an interactive dashboard delivering revenue and city-level insights.
 
-**Project Architecture :**
-            ┌─────────────────────┐
-            │     Raw CSV Data    │
-            └──────────┬──────────┘
-                       │
-                       ▼
-            ┌─────────────────────┐
-            │   PostgreSQL DB     │
-            │ (Data Storage Layer)│
-            └──────────┬──────────┘
-                       │
-                       ▼
-            ┌─────────────────────┐
-            │  Data Cleaning &    │
-            │  Feature Engineering│
-            │                     │
-            └──────────┬──────────┘
-                       │
-                       ▼
-            ┌─────────────────────┐
-            │  Business Analysis  │
-            │  (15 SQL Queries)   │
-            └──────────┬──────────┘
-                       │
-                       ▼
-            ┌─────────────────────┐
-            │     ODBC Bridge     │
-            │ (Database → Excel)  │
-            └──────────┬──────────┘
-                       │
-                       ▼
-            ┌─────────────────────┐
-            │   Excel Dashboard   │
-            │ (KPIs, Charts,      │
-            │  Slicers, Insights) │
-            └──────────┬──────────┘
-                       │
-                       ▼
-            ┌─────────────────────┐
-            │  Business Insights  │
-            │ & Decision Support  │
-            └─────────────────────┘
-
-
 **End-to-End Workflow**
 
 1. Data Engineering in PostgreSQL
